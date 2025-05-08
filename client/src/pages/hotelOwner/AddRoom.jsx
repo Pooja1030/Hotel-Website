@@ -16,9 +16,9 @@ const AddRoom = () => {
     pricePerNight: 0,
     amenities: {
       'Free WiFi' : false,
-      'Free reakfast' : false,
+      'Free Breakfast' : false,
       'Room Serice' : false,
-      'Mountain iews' : false,
+      'Mountain  Views' : false,
       'Pool Access' : false,
 
     }
@@ -26,7 +26,7 @@ const AddRoom = () => {
 
   return (
     <form>
-        <Title align='left' font='outfit' title='Add Room' subTitle='Fill in the details carefully and accurate room details, pricing, and amenities, to enhance the user ooking experience.' />
+        <Title align='left' font='outfit' title='Add Room' subTitle='Fill in the details carefully and accurate room details, pricing, and amenities, to enhance the user booking experience.' />
         {/* Upload area for Images */}
         <p className='text-gray-800 mt-10'>Images</p>
         <div className='grid grid-cols-2 sm:flex gap-4 my-2 flex-wrap'>
@@ -43,8 +43,8 @@ const AddRoom = () => {
             <p className='text-gray-800 mt-4'>Room Type</p>
             <select value={inputs.roomType} onChange={e=> setInputs({...inputs, roomType: e.target.value})} className='border opacity-70 border-gray-300 mt-1 rounded p-2 w-full'>
               <option value="">Select Room Type</option>
-              <option value="Single ed">Single ed</option>
-              <option value="Double ed">Double ed</option>
+              <option value="Single Bed">Single Bed</option>
+              <option value="Double Bed">Double Bed</option>
               <option value="Luxury Room">Luxury Room</option>
               <option value="Family Suite">Family Suite</option>
             </select>
